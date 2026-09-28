@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Perfil · ALT-F4</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Silkscreen:wght@400;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/main.css">
+<link rel="stylesheet" href="css/profile.css">
+</head>
+<body>
+<header class="top">
+  <a class="logo" href="index.html" aria-label="ALT-F4, inicio"><i class="px" aria-hidden="true"></i>ALT-F4</a>
+  <a class="btn profile-btn" href="perfil.html"><span class="ava" aria-hidden="true"></span>Perfil</a>
+</header>
+<main id="main" class="pf">
+  <p class="note"><b class="demo">DEMO</b> Datos de ejemplo. Aún no hay conexión con usuarios reales. <a href="perfil.html?visita=1" id="viewSwitch">Ver como otro usuario</a></p>
+  <div class="cover-p" id="cover" role="img" aria-label="Portada del perfil"></div>
+  <div class="idrow">
+    <div class="av lg" id="avatar" role="img" aria-label="Avatar"></div>
+    <ul class="badges" id="badges" aria-label="Insignias"></ul>
+  </div>
+  <div class="who">
+    <div class="who-t"><h1 id="name">Jesús</h1><a class="btn" id="editBtn" href="perfil-editar.html">Editar perfil</a></div>
+    <p class="user">@jesus</p>
+    <p class="bio">“Me gustan los videojuegos, el anime y descubrir juegos nuevos.”</p>
+    <p class="meta">Miembro desde septiembre de 2026 · <span id="followed">42 juegos seguidos</span></p>
+  </div>
+  <div class="tabs" role="tablist" aria-label="Secciones del perfil" id="tabs"></div>
+  <section id="panel" role="tabpanel" tabindex="0"></section>
+</main>
+<nav class="dock" aria-label="Navegación principal">
+  <a href="index.html" class="dk">Inicio</a>
+  <a href="index.html#juegos" class="dk">Juegos</a>
+  <a href="index.html#buscar" class="dk">Buscar</a>
+</nav>
+<script src="js/profile.js"></script>
+</body></html>
