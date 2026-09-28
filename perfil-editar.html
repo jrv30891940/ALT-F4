@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Editar perfil · ALT-F4</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Silkscreen:wght@400;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/main.css">
+<link rel="stylesheet" href="css/profile.css">
+</head>
+<body>
+<header class="top">
+  <a class="logo" href="index.html" aria-label="ALT-F4, inicio"><i class="px" aria-hidden="true"></i>ALT-F4</a>
+  <a class="btn profile-btn" href="perfil.html"><span class="ava" aria-hidden="true"></span>Perfil</a>
+</header>
+<main id="main" class="pf">
+  <h1>Editar perfil</h1>
+  <p class="note"><b class="demo">DEMO</b> Las restricciones de tiempo las aplicará el backend más adelante.</p>
+  <form id="editForm" novalidate>
+    <fieldset><legend>Información</legend>
+      <div class="fld"><label for="fName">Nombre</label><input id="fName" value="Jesús" disabled><button type="button" class="btn" data-change="name">Cambiar nombre</button><p class="hint" id="hName">Disponible para cambiar.</p></div>
+      <div class="fld"><label for="fUser">Nombre de usuario</label><input id="fUser" value="@jesus" disabled><button type="button" class="btn" data-change="user">Cambiar nombre de usuario</button><p class="hint" id="hUser">Disponible para cambiar.</p></div>
+      <div class="fld"><label for="fBio">Biografía</label><textarea id="fBio" rows="3" maxlength="160">Me gustan los videojuegos, el anime y descubrir juegos nuevos.</textarea></div>
+    </fieldset>
+    <fieldset><legend>Avatar</legend><div class="gal av-gal" id="avG" role="radiogroup" aria-label="Avatares"></div></fieldset>
+    <fieldset><legend>Portada</legend><div class="gal cv-gal" id="cvG" role="radiogroup" aria-label="Portadas"></div></fieldset>
+    <fieldset><legend>Insignias</legend><p class="note">Usa las flechas para cambiar el orden. Oculta las que no quieras mostrar.</p><ul class="blist" id="bList"></ul></fieldset>
+    <fieldset><legend>Juegos seguidos</legend><ul class="blist" id="gList"></ul></fieldset>
+    <fieldset><legend>Privacidad</legend><div id="privG"></div></fieldset>
+    <div class="actions"><button type="submit" class="btn pri">Guardar cambios</button><a class="btn" href="perfil.html">Cancelar</a><span id="saved" class="ok" role="status"></span></div>
+  </form>
+</main>
+<nav class="dock" aria-label="Navegación principal">
+  <a href="index.html" class="dk">Inicio</a>
+  <a href="index.html#juegos" class="dk">Juegos</a>
+  <a href="index.html#buscar" class="dk">Buscar</a>
+</nav>
+<script src="js/profile.js"></script>
+</body></html>
