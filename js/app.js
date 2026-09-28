@@ -23,3 +23,4 @@ $('#profileBtn').onclick=()=>tog('profile');
 $('#searchBtn').onclick=()=>tog('search');
 document.addEventListener('click',e=>{if(e.target.closest('[data-open-search]'))show('search');else if(e.target.closest('[data-close]')||e.target.id==='scrim'||e.target.id==='searchOv')close();});
 document.addEventListener('keydown',e=>{if(e.key==='Escape')close()});
+if(location.hash==="#juegos")show("games");else if(location.hash==="#buscar")show("search");
